@@ -9,4 +9,8 @@ class StoriesController < ApplicationController
 		redirect_to '/'
 	end
 
+	def show
+		
+	end
+
 end
