@@ -23,6 +23,7 @@ end
 gem 'jquery-rails'
 
 gem 'httparty'
+gem 'devise'
 
 
 group :development do

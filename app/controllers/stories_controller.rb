@@ -5,5 +5,8 @@ class StoriesController < ApplicationController
 		@nyc_data = JSON(x.body)
 	end
 
+	def create
+		redirect_to '/'
+	end
 
 end
