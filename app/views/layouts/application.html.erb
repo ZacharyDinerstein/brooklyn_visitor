@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>BrooklynVisitor</title>
+  <title>The Brooklyn Visitor</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield %>
+	<h1>The Brooklyn Visitor</h1>
+	<ul>
+		<li></li>
+		<li></li>
+		<li> <a href="/stories/new">Submit your story</a> </li>
+		<li></li>
+	</ul>
+	<%= yield %>
 
 </body>
 </html>
