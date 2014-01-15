@@ -1,3 +1,3 @@
 class Story < ActiveRecord::Base
-  attr_accessible :email, :name, :narative, :title
+  attr_accessible :email, :name, :narative, :title, :story_image
 end
