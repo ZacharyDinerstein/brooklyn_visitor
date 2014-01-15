@@ -1,6 +1,9 @@
 BrooklynVisitor::Application.routes.draw do
   
   get '/' => 'welcome#index'
+  get '/about' => 'about#index'
+  get '/contact' => 'contact#index'
+  
   resources :stories
 
 

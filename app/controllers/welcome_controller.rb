@@ -5,7 +5,6 @@ class WelcomeController < ApplicationController
 		@nyc_data = JSON(x.body)
 	end
 
-
 end
 
 

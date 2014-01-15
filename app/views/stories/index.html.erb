@@ -1,0 +1,14 @@
+<h2>Narratives near you</h2>
+
+<br/>
+
+<% @stories.each do |story| %>
+	
+	<!-- Gives the link an href equal to /stories/<the id of the current story being displayed> . This id is fetched from our databse using Active Record  -->
+	<h3> <a href="/stories/<%= story.id%>"> <%= story.title %></a></h3>
+	
+	<!-- Displayes the name of the person who wrote the current story. .name is an ActiveRecord method that reaches into our database and retrieves whatever value is stored in this story's name column.  -->
+	<h4><%= story.name %></h4>
+	
+	<br/>
+<% end %>	

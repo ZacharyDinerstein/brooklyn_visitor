@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Brooklyn Visitor</title>
+  <title>The Visitor</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
-	<h1>The Brooklyn Visitor</h1>
+	<h1>The Visitor</h1>
+	<h3>a blog about town</h3>
 	<ul>
-		<li></li>
-		<li></li>
+		<li> <a href="/about">About</a></li>
+		<li> <a href="/stories">Stories</a> </li>
 		<li> <a href="/stories/new">Submit your story</a> </li>
-		<li></li>
+		<li> <a href="/contact">Contact</a></li>
 	</ul>
 	<%= yield %>
 
