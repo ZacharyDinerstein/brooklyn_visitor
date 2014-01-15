@@ -1,4 +1,6 @@
 BrooklynVisitor::Application.routes.draw do
+  devise_for :admins
+
   devise_for :users
 
   # root :to => "home#index"      #Added this for so devise can find my welcome/index route. Might be redundent.
