@@ -1,5 +1,8 @@
 class StoriesController < ApplicationController
 
+	#Forces a user to be singed in before they're able to access the Submit your story page. Only singed in visitor users can submit a story.
+	before_filter :authenticate_user!, except: [:index, :show]
+	
 	def new
 	
 	end

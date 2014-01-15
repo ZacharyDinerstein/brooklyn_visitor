@@ -7,6 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+ 	
+
+    <!-- I don't understand exactly what the top of this if statement is doing. -->
+    <% if user_signed_in?  %>
+		<%= link_to "logout", destroy_user_session_path, method: :delete %>
+	<% else %>
+		<%= link_to "sign-in", new_user_session_path %>
+		<%= link_to "sign-up", new_user_registration_path %>
+    <% end %>
 
 	<h1>The Visitor</h1>
 	<h3>a blog about town</h3>
@@ -16,6 +25,8 @@
 		<li> <a href="/stories/new">Submit your story</a> </li>
 		<li> <a href="/contact">Contact</a></li>
 	</ul>
+	<p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 	<%= yield %>
 
 </body>

@@ -1,10 +1,13 @@
 BrooklynVisitor::Application.routes.draw do
-  
+  devise_for :users
+
+  # root :to => "home#index"      #Added this for so devise can find my welcome/index route. Might be redundent.
   get '/' => 'welcome#index'
   get '/about' => 'about#index'
   get '/contact' => 'contact#index'
   
   resources :stories
+
 
 
   # The priority is based upon order of creation:
