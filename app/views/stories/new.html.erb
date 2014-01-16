@@ -1,35 +1,57 @@
 <div class='content-right col-lg-7 col-md-6 col-sm-6 col-xs-10 '>
 	
-	<h2>Submit your story</h2>
+	<h2>Tell us about yourself</h2>
 
-	<form action="/stories" method="post">
-		<label for="name">Name</label>
-		<br/>
-		<input type="text" name="name">
-		<br/>
-		<br/>
-		<label for="email">Email</label>
-		<br/>
-		<input type="text" name="email">
-		<br/>
-		<br/>
-		<label for="story_image">Story Image URL</label>
-		<br/>
-		<input type="text" name="story_image">
-		<br/>
-		<br/>
-		<label for="title">Title</label>
-		<br/>
-		<input type="text" name="title">
-		<br/>
-		<br/>
-		<label for="title">Your Story Here...</label>
-		<br/>
-		<textarea name='narrative'></textarea>
-		<br/>
-		<br/>
-		<button type="submit" class="btn">Submit</button>
+	<div class="form-group">
+		<form action="/stories" method="post">
+			<label for="name">Name</label>
+			<br/>
+			<input type="text" name="name">
+			<br/>
+			<br/>
+			<label for="email">Email</label>
+			<br/>
+			<input type="text" name="email">
+			<br/>
+			<br/>
+			<h3>Where's your story unfold?</h3>
+			<br>
+			<label for="borough">Borough</label>
+			<br/>
+			<select name="borough" class="form-control select">
+				<option value="1">Manhattan</option>
+				<option value="2">Brooklyn</option>
+				<option value="3">Queens</option>
+				<option value="4">Bronx</option>
+				<option value="5">Staten Island</option>
+			</select>
+			<br/>
+			<br/>
+			<label for="zipcode">Zipcode</label>
+			<br/>
+			<input type="text" name="zipcode">
+			<br/>
+			<br/>
+			
+			<h3>Share your story</h3>
+			<br>
+			<label for="story_image">Story Image URL</label>
+			<br/>
+			<input type="text" name="story_image">
+			<br/>
+			<br/>
+			<label for="title">Title</label>
+			<br/>
+			<input type="text" name="title">
+			<br/>
+			<br/>
+			<label for="title">Your Story Here...</label>
+			<br/>
+			<textarea name='narrative'></textarea>
+			<br/>
+			<br/>
+			<button type="submit" class="btn">Submit</button>
 
-	</form>
-
+		</form>
+	</div>
 </div>

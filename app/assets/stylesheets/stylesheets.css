@@ -30,6 +30,10 @@ form {
 	margin-bottom: 2em;
 }
 
+.select {
+	width: 11em;
+}
+
 .header {
 	width: 25em;
 	margin-bottom: 1em;
