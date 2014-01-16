@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>The Visitor</title>
+  <title>THE VISITOR</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
  	
+	<!-- OPEN sign_in_sign_out navbar DIV-->
+	<div class="sign_in_sign_out navbar navbar-default navbar-static-top">
 
-    <!-- I don't understand exactly what the top of this if statement is doing. -->
-    <% if user_signed_in?  %>
-		<%= link_to "logout", destroy_user_session_path, method: :delete %>
-	<% else %>
-		<%= link_to "sign-in", new_user_session_path %>
-		<%= link_to "sign-up", new_user_registration_path %>
-    <% end %>
+		<div class="navbar-brand ">
 
-	<h1><a href="/">The Visitor</a></h1>
-	<h3>a blog about town</h3>
-	<ul>
-		<li> <a href="/about">About</a></li>
-		<li> <a href="/stories">Stories</a> </li>
-		<li> <a href="/stories/new">Submit your story</a> </li>
-		<li> <a href="/contact">Contact</a></li>
-	</ul>
-	<p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
-	<%= yield %>
+		    <!-- I don't understand exactly what the top of this if statement is doing. -->
+		    <% if user_signed_in?  %>
+				<%= link_to "logout", destroy_user_session_path, method: :delete %>
+			<% else %>
+				<%= link_to "sign-in", new_user_session_path, {:class => "btn btn-default"} %> 
+				<%= link_to "sign-up", new_user_registration_path, {:class => "btn btn-default"} %>
+		    <% end %>
+	    </div>
+
+    </div>
+    <!-- CLOSE sign_in_sign_out navbar DIV -->
+    
+	<div class="container">
+		<div class="header">
+		<header class="col-xs-4 col-lg-4 header">
+			<h1><a href="/">THE VISITOR</a></h1>
+			<h3>a blog about town</h3>
+			<nav>
+				<ul>
+					<li> <a href="/about">About</a></li>
+					<li> <a href="/stories">Stories</a> </li>
+					<li> <a href="/stories/new">Submit Your Story</a> </li>
+					<li> <a href="/contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		</div>
+
+		<p class="notice"><%= notice %></p>
+	    <p class="alert"><%= alert %></p>
+		<%= yield %>
+
+	</div>
 
 </body>
 </html>

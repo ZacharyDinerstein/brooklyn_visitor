@@ -1,13 +1,35 @@
-<h2>Submit your story</h2>
+<div class='content-right col-lg-7 col-md-6 col-sm-6 col-xs-10 '>
+	
+	<h2>Submit your story</h2>
 
-<form action="/stories" method="post">
-	<input type="text" name="name" placeholder="your name">
-	<input type="text" name="email" placeholder="email">
-	<input type="text" name="story_image" placeholder="story image URL">
-	<input type="text" name="title" placeholder="story_title">
-	<textarea name='narative'>your story here...</textarea>
-	<button>Submit</button>
-</form>
+	<form action="/stories" method="post">
+		<label for="name">Name</label>
+		<br/>
+		<input type="text" name="name">
+		<br/>
+		<br/>
+		<label for="email">Email</label>
+		<br/>
+		<input type="text" name="email">
+		<br/>
+		<br/>
+		<label for="story_image">Story Image URL</label>
+		<br/>
+		<input type="text" name="story_image">
+		<br/>
+		<br/>
+		<label for="title">Title</label>
+		<br/>
+		<input type="text" name="title">
+		<br/>
+		<br/>
+		<label for="title">Your Story Here...</label>
+		<br/>
+		<textarea name='narrative'></textarea>
+		<br/>
+		<br/>
+		<button type="submit" class="btn">Submit</button>
 
+	</form>
 
-
+</div>
