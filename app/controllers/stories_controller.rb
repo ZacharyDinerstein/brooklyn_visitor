@@ -21,6 +21,10 @@ class StoriesController < ApplicationController
 	end
 
 	def show
+		#NYC Open Data Demographics API
+		x = HTTParty.get('https://data.cityofnewyork.us/api/views/kku6-nxdu/rows.json')
+		@nyc_data = JSON(x.body)
+
 		@story = Story.find(params[:id])
 		
 	end

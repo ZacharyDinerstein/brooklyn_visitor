@@ -1,9 +1,28 @@
 <div class='content-right col-lg-7  col-md-6  col-sm-6  col-xs-10 '>
 
-<h3><%= @story.title %></h3>
-<h4><%= @story.name %></h4>
-<img src="<%= @story.story_image %>" alt="Story_picture">
-<p><%= @story.narrative %></p>
-<p><%= @story.email %></p>
+	<h3><%= @story.title %></h3>
+	<h4><%= @story.name %></h4>
+	<img src="<%= @story.story_image %>" alt="Story_picture">
+	<p><%= @story.narrative %></p>
+	<p><%= @story.email %></p>
 	
-	</div>
+
+	<table border=1px >
+		<thead>
+			<th>Neighborhood</th>
+			<th>hispanic</th>
+			<th>asian</th>
+			<th>white</th>
+			<th>black</th>
+		</thead>
+		<tbody>
+			<tr>
+				<td><%= (@nyc_data["data"][73][8]) %></td>
+				<td>% <%= (@nyc_data["data"][73][21]).to_f * 100 %></td>
+				<td>% <%= (@nyc_data["data"][73][25]).to_f * 100 %></td>
+				<td>% <%= (@nyc_data["data"][73][27]).to_f * 100 %></td>
+				<td>% <%= (@nyc_data["data"][73][29]).to_f * 100 %></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
