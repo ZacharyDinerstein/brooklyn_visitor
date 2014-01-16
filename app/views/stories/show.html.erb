@@ -17,7 +17,10 @@
 		</thead>
 		<tbody>
 			<tr>
-					<!-- Declaire neighborhood -->
+					<!-- Declaire current_neighborhood -->
+					<% current_neighborhood = 0 %>
+
+					<!-- Declaire zip_code -->
 					<% zip_code = "" %>
 
 					<!-- Set data_array equal to all of the neighborhood info stored in nyc_ope_data's demographics api. It comes in the form of an array. -->
@@ -31,21 +34,18 @@
 
 							<!-- ...set neighborhood to the array index of that zip code -->
 							<% zip_code = array.index("10001") %>
+
+							<!-- ...and set current_neighborhood to the index of the array this zipcode is located within. The minus 2 is to account for some odd indexing inside the API. -->
+							<% current_neighborhood = array[0] - 2 %>
 						<% end %>
 					<% end %>
 
-						
+				<td><%= (@nyc_data["data"][current_neighborhood][zip_code]) %></td>
 
-					
-
-				<td><%= (@nyc_data["data"][73][zip_code]) %></td>
-
-	
-
-				<td>% <%= (@nyc_data["data"][73][21]).to_f * 100 %></td>
-				<td>% <%= (@nyc_data["data"][73][25]).to_f * 100 %></td>
-				<td>% <%= (@nyc_data["data"][73][27]).to_f * 100 %></td>
-				<td>% <%= (@nyc_data["data"][73][29]).to_f * 100 %></td>
+				<td>% <%= (@nyc_data["data"][current_neighborhood][21]).to_f * 100 %></td>
+				<td>% <%= (@nyc_data["data"][current_neighborhood][25]).to_f * 100 %></td>
+				<td>% <%= (@nyc_data["data"][current_neighborhood][27]).to_f * 100 %></td>
+				<td>% <%= (@nyc_data["data"][current_neighborhood][29]).to_f * 100 %></td>
 			</tr>
 		</tbody>
 	</table> 
