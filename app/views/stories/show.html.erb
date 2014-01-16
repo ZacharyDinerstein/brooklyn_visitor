@@ -7,7 +7,7 @@
 	<p><%= @story.email %></p>
 	
 
-	<table border=1px >
+	<!-- <table border=1px >
 		<thead>
 			<th>Neighborhood</th>
 			<th>hispanic</th>
@@ -17,12 +17,27 @@
 		</thead>
 		<tbody>
 			<tr>
+					<% data_array = (@nyc_data["data"]) %>
+						<% data_array.each do |array| %>
+						<p><%= array %></p>
+							<% if array.include?(10466) %>
+								<% @neighborhood = array.index(11215) %>
+							<% end %>
+						<% end %>
+
+						<h1><%= @neighborhood %></h1>
+
+					
+
 				<td><%= (@nyc_data["data"][73][8]) %></td>
+
+	
+
 				<td>% <%= (@nyc_data["data"][73][21]).to_f * 100 %></td>
 				<td>% <%= (@nyc_data["data"][73][25]).to_f * 100 %></td>
 				<td>% <%= (@nyc_data["data"][73][27]).to_f * 100 %></td>
 				<td>% <%= (@nyc_data["data"][73][29]).to_f * 100 %></td>
 			</tr>
 		</tbody>
-	</table>
+	</table> -->
 </div>
