@@ -7,7 +7,7 @@
 	<p><%= @story.email %></p>
 	
 
-	<!-- <table border=1px >
+	<table border=1px >
 		<thead>
 			<th>Neighborhood</th>
 			<th>hispanic</th>
@@ -17,19 +17,28 @@
 		</thead>
 		<tbody>
 			<tr>
-					<% data_array = (@nyc_data["data"]) %>
-						<% data_array.each do |array| %>
-						<p><%= array %></p>
-							<% if array.include?(10466) %>
-								<% @neighborhood = array.index(11215) %>
-							<% end %>
-						<% end %>
+					<!-- Declaire neighborhood -->
+					<% zip_code = "" %>
 
-						<h1><%= @neighborhood %></h1>
+					<!-- Set data_array equal to all of the neighborhood info stored in nyc_ope_data's demographics api. It comes in the form of an array. -->
+					<% data_array = (@nyc_data["data"]) %>
+
+					<!-- Cycle through every neighborhood in the data_array -->
+					<% data_array.each do |array| %>
+
+						<!-- If the zip code we're looking for is included somewhere in that array... -->
+						<% if array.include?("10001") %>
+
+							<!-- ...set neighborhood to the array index of that zip code -->
+							<% zip_code = array.index("10001") %>
+						<% end %>
+					<% end %>
+
+						
 
 					
 
-				<td><%= (@nyc_data["data"][73][8]) %></td>
+				<td><%= (@nyc_data["data"][73][zip_code]) %></td>
 
 	
 
@@ -39,5 +48,6 @@
 				<td>% <%= (@nyc_data["data"][73][29]).to_f * 100 %></td>
 			</tr>
 		</tbody>
-	</table> -->
+	</table> 
+
 </div>
