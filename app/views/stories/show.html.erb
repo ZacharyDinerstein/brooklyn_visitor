@@ -1,54 +1,59 @@
-<div class='col-lg-offset-1 col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-10 background_solid rounded_border shadow'>
 
-	<h3><%= @story.title %></h3>
-	<h4 class="point_two_em_padding_bottom bottom_double_border">By <%= @story.name %></h4>
-	<img class="large_story_image center-block"src="<%= @story.story_image %>" alt="Story_picture">
-	<p class="two_em_margin_bottom"><%= @story.narrative %></p>
-	<h4 class="two_em_margin_bottom"><%= @story.email %></h4>
-	
-	<h3>Learn about this hood</h3>
+<!-- This should change the background image of this page to a borough-specific background -->
+<div class="background_bk">
 
-	<table class="table table-striped table-bordered table-condensed two_em_margin_bottom">
-		<thead>
-			<th>zipcode</th>
-			<th>hispanic</th>
-			<th>asian</th>
-			<th>white</th>
-			<th>black</th>
-		</thead>
-		<tbody>
-			<tr>
-					<!-- Declaire current_neighborhood -->
-					<% current_neighborhood = 0 %>
+	<div class='col-lg-offset-1 col-md-offset-1 col-lg-7 col-md-7 col-sm-6 col-xs-10 background_solid rounded_border shadow'>
 
-					<!-- Declaire zip_code -->
-					<% zipcode = 0 %>
+		<h3><%= @story.title %></h3>
+		<h4 class="point_two_em_padding_bottom bottom_double_border">By <%= @story.name %></h4>
+		<img class="large_story_image center-block"src="<%= @story.story_image %>" alt="Story_picture">
+		<p class="two_em_margin_bottom"><%= @story.narrative %></p>
+		<h4 class="two_em_margin_bottom"><%= @story.email %></h4>
+		
+		<h3>Learn about this hood</h3>
 
-					<!-- Set data_array equal to all of the neighborhood info stored in nyc_ope_data's demographics api. It comes in the form of an array. -->
-					<% data_array = (@nyc_data["data"]) %>
+		<table class="table table-striped table-bordered table-condensed two_em_margin_bottom">
+			<thead>
+				<th>zipcode</th>
+				<th>hispanic</th>
+				<th>asian</th>
+				<th>white</th>
+				<th>black</th>
+			</thead>
+			<tbody>
+				<tr>
+						<!-- Declaire current_neighborhood -->
+						<% current_neighborhood = 0 %>
 
-					<!-- Cycle through every neighborhood in the data_array -->
-					<% data_array.each do |array| %>
+						<!-- Declaire zip_code -->
+						<% zipcode = 0 %>
 
-						<!-- If the story's zipcode (submitted by the user) is included somewhere in that array... -->
-						<% if array.include?(@story.zipcode.to_s) %>
+						<!-- Set data_array equal to all of the neighborhood info stored in nyc_ope_data's demographics api. It comes in the form of an array. -->
+						<% data_array = (@nyc_data["data"]) %>
 
-							<!-- ...set zipcode to the array index of that zipcode. (We add to_s to @story.zipcode because the data_array storys all of it's data as strings, even zipcodes). -->
-							<% zipcode = array.index(@story.zipcode.to_s) %>
+						<!-- Cycle through every neighborhood in the data_array -->
+						<% data_array.each do |array| %>
 
-							<!-- ...and set current_neighborhood to the index of the array this zipcode is located within. The minus 2 is to account for some odd indexing inside the API. -->
-							<% current_neighborhood = array[0] - 2 %>
+							<!-- If the story's zipcode (submitted by the user) is included somewhere in that array... -->
+							<% if array.include?(@story.zipcode.to_s) %>
+
+								<!-- ...set zipcode to the array index of that zipcode. (We add to_s to @story.zipcode because the data_array storys all of it's data as strings, even zipcodes). -->
+								<% zipcode = array.index(@story.zipcode.to_s) %>
+
+								<!-- ...and set current_neighborhood to the index of the array this zipcode is located within. The minus 2 is to account for some odd indexing inside the API. -->
+								<% current_neighborhood = array[0] - 2 %>
+							<% end %>
 						<% end %>
-					<% end %>
 
-				<td><%= (@nyc_data["data"][current_neighborhood][zipcode]) %></td>
+					<td><%= (@nyc_data["data"][current_neighborhood][zipcode]) %></td>
 
-				<td>% <%= (@nyc_data["data"][current_neighborhood][21]).to_f * 100 %></td>
-				<td>% <%= (@nyc_data["data"][current_neighborhood][25]).to_f * 100 %></td>
-				<td>% <%= (@nyc_data["data"][current_neighborhood][27]).to_f * 100 %></td>
-				<td>% <%= (@nyc_data["data"][current_neighborhood][29]).to_f * 100 %></td>
-			</tr>
-		</tbody>
-	</table> 
+					<td>% <%= (@nyc_data["data"][current_neighborhood][21]).to_f * 100 %></td>
+					<td>% <%= (@nyc_data["data"][current_neighborhood][25]).to_f * 100 %></td>
+					<td>% <%= (@nyc_data["data"][current_neighborhood][27]).to_f * 100 %></td>
+					<td>% <%= (@nyc_data["data"][current_neighborhood][29]).to_f * 100 %></td>
+				</tr>
+			</tbody>
+		</table> 
 
+	</div>
 </div>

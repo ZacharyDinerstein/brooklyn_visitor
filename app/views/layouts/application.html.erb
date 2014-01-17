@@ -32,9 +32,10 @@
 	<div class="container">
 		
 		<header class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header background_solid_darker rounded_border shadow">
-			<!-- <h1 class="oswald"><a href="/">THE VISITOR</a></h1> -->
-			<div class="logo col-lg offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 clearfix"></div>
-			<h3 class="slogan light_title_font">a blog about town</h3>
+			<a href="/">
+				<div class="logo col-lg offset-1 col-lg-10 col-md-12 col-sm-12 col-xs-12 clearfix"></div></a>
+				<h3 class="slogan light_title_font">a blog about town</h3>
+			
 			<nav>
 				<ul>
 					<li> <a href="/about">About</a></li>
@@ -48,7 +49,9 @@
 
 		<p class="notice hidden"><%= notice %></p>
 	    <p class="alert hidden"><%= alert %></p>
+	    
 		<%= yield %>
+
 
 	</div>
 

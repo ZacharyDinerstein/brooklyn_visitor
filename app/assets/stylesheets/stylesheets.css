@@ -49,33 +49,6 @@ nav ul li {
 	font-family: Bebas_Bold, Arial, Helvetica, sans-serif;
 }
 
-
-
-body { 
-  background-image: url('lighter_mta.jpg'); 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.logo { 
-  background-image: url('logo.jpg'); 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 2.7em;
-  margin-top: 1em;
-  margin-bottom: .5em;
-  margin-right: 4em;
-}
-
-.slogan {
-	margin-left: .3em;
-	font-size:1.6em;
-}
-
 ul {
 	list-style: none;
 	padding-left: 0em;
@@ -90,8 +63,6 @@ li {
 
 }
 
-
-
 header {
 	padding-bottom: 1em;
 }
@@ -103,6 +74,22 @@ textarea {
 
 form {
 	margin-bottom: 2em;
+}
+
+body { 
+  background-image: url('lighter_mta.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.brooklyn_bg_image {
+	 background-image: url('brooklyn_background.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .select {
@@ -201,6 +188,23 @@ form {
 	box-shadow: 0 0 30px 5px #999;
 }
 
+.logo { 
+  background-image: url('logo.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 2.7em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  margin-right: 4em;
+}
+
+.slogan {
+	margin-left: .3em;
+	font-size:1.6em;
+}
+
 .bold_title_font {
 	font-family: 'Josefin Slab', serif; 
 	font-weight: 700;
@@ -214,5 +218,13 @@ form {
 .oswald {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
+}
+
+#one {
+	 background-image: url('brooklyn_background.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
