@@ -9,7 +9,7 @@
 <body>
  	
 	<!-- OPEN sign_in_sign_out navbar DIV-->
-	<div class="sign_in_sign_out navbar navbar-default navbar-static-top">
+	<div class="sign_in_sign_out navbar navbar-inverse navbar-static-top">
 
 		<div class="navbar-brand ">
 
@@ -26,8 +26,8 @@
     <!-- CLOSE sign_in_sign_out navbar DIV -->
     
 	<div class="container">
-		<div class="header background_solid">
-		<header class="col-xs-4 col-lg-4 header background_solid">
+		
+		<header class="col-xs-4 col-sm-4 col-md-4 col-lg-4 header background_solid">
 			<h1><a href="/">THE VISITOR</a></h1>
 			<h3>a blog about town</h3>
 			<nav>
@@ -39,10 +39,10 @@
 				</ul>
 			</nav>
 		</header>
-		</div>
+		
 
-		<p class="notice"><%= notice %></p>
-	    <p class="alert"><%= alert %></p>
+		<p class="notice hidden"><%= notice %></p>
+	    <p class="alert hidden"><%= alert %></p>
 		<%= yield %>
 
 	</div>

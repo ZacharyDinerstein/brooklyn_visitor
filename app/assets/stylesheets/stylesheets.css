@@ -1,5 +1,5 @@
 body { 
-  /*background-image: url('huge_faded_mta_map.jpg'); */
+  background-image: url('lighter_mta.jpg'); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -20,14 +20,11 @@ li {
 
 }
 
-nav {
-	width: 20.5em;
-}
 
-/*header {
-	width: 20.5em;
-	background-color: red;
-}*/
+
+header {
+	padding-bottom: 1em;
+}
 
 textarea {
 	width: 31.5em;
@@ -43,7 +40,7 @@ form {
 }
 
 .header {
-	width: 25em;
+	/*width: 25em;*/
 	margin-bottom: 1em;
 }
 
@@ -91,7 +88,7 @@ form {
 .clearfix { display: inline-block; }
 
 .background_solid {
-	background-color: rgba(243, 243, 243, 1)
+	background-color: rgba(241, 241, 241, 1)
 }
 
 .large_story_image {
@@ -104,6 +101,21 @@ form {
 	margin-bottom: 2em;
 }
 
+.two_em_padding_bottom {
+	padding-bottom: 2em;
+}
+
+.bottom_double_border {
+	border-style: none none double none;
+}
+
+.point_two_em_padding_bottom {
+	padding-bottom: .2em;
+}
+
+.top_margin {
+	margin-top: 2em;
+}
 
 
 
