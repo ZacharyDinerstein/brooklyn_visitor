@@ -6,8 +6,8 @@ h1, h2, h3, h4, h5, h6, a {
 	font-weight: 400;
 }
 
-a {
-	
+nav ul li {
+	padding: .5em;
 }
 
 @font-face {
@@ -57,6 +57,23 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.logo { 
+  background-image: url('logo.jpg'); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 2.7em;
+  margin-top: 1em;
+  margin-bottom: .5em;
+  margin-right: 4em;
+}
+
+.slogan {
+	margin-left: .3em;
+	font-size:1.6em;
 }
 
 ul {
@@ -142,6 +159,10 @@ form {
 
 .background_solid {
 	background-color: rgba(241, 241, 241, 1)
+}
+
+.background_solid_darker {
+	background-color: rgba(236, 235, 235, 1)
 }
 
 .large_story_image {
