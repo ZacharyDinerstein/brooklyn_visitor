@@ -1,14 +1,14 @@
-<div class='content-right col-lg-7  col-md-6  col-sm-6  col-xs-10 '>
+<div class='col-lg-7  col-md-7  col-sm-6  col-xs-10 background_solid'>
 
 	<h3><%= @story.title %></h3>
-	<h4><%= @story.name %></h4>
-	<img src="<%= @story.story_image %>" alt="Story_picture">
-	<p><%= @story.narrative %></p>
-	<p><%= @story.email %></p>
+	<h4>By <%= @story.name %></h4>
+	<img class="large_story_image center-block"src="<%= @story.story_image %>" alt="Story_picture">
+	<p class="two_em_margin_bottom"><%= @story.narrative %></p>
+	<h4 class="two_em_margin_bottom"><%= @story.email %></h4>
 	
 	<h3>Learn about this hood</h3>
 
-	<table class="table table-striped table-bordered table-condensed">
+	<table class="table table-striped table-bordered table-condensed two_em_margin_bottom">
 		<thead>
 			<th>zipcode</th>
 			<th>hispanic</th>

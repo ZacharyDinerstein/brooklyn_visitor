@@ -1,21 +1,21 @@
 
-<div class='content-right col-lg-6 col-md-7 col-sm-6 col-xs-10'>
+<div class='content-right col-lg-6 col-md-7 col-sm-6 col-xs-10 background_solid'>
 	<h2 class="negative_bottom_margin">Narratives near you</h2>
 
 	<br/>
 
 	<% @stories.each do |story| %>
 		
-		<div class="relative clearfix story_preview_div">
+		<div class="relative clearfix story_preview_div col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
 			<!-- Gives the link an href equal to /stories/<the id of the current story being displayed> . This id is fetched from our databse using Active Record  -->
 			<a href="/stories/<%= story.id%>"> 
 				<img class="story_preview_pic inline float_left" src="<%= story.story_image %>" alt="story_picture">
-				<h4 class="float_left"> <%= story.title.upcase %></h4>
+				<h4 class="float_left col-md-9 col-lg-9"> <%= story.title.upcase %></h4>
 				<br/>
 
 				<!-- Displayes the name of the person who wrote the current story. .name is an ActiveRecord method that reaches into our database and retrieves whatever value is stored in this story's name column.  -->
-				<h5 class="float_left">BY <%= story.name.upcase %></h5>
+				<h5 class="float_left col-md-9 col-lg-9">BY <%= story.name.upcase %></h5>
 			</a>
 		
 		</div>

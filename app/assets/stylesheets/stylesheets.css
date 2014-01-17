@@ -1,3 +1,11 @@
+body { 
+  /*background-image: url('huge_faded_mta_map.jpg'); */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 ul {
 	list-style: none;
 	padding-left: 0em;
@@ -22,7 +30,7 @@ nav {
 }*/
 
 textarea {
-	width: 35em;
+	width: 31.5em;
 	height: 30em;
 }
 
@@ -82,8 +90,19 @@ form {
 
 .clearfix { display: inline-block; }
 
+.background_solid {
+	background-color: rgba(243, 243, 243, 1)
+}
 
+.large_story_image {
+	width: 30em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
 
+.two_em_margin_bottom {
+	margin-bottom: 2em;
+}
 
 
 
