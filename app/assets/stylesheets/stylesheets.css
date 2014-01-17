@@ -1,3 +1,56 @@
+
+/*FONT STUFF*/
+
+h1, h2, h3, h4, h5, h6, a {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+
+a {
+	
+}
+
+@font-face {
+	font-family: MyCustomBebas;
+	src: url("BebasNeue-webfont.eot") /* EOT file for IE */
+}
+
+@font-face {
+	font-family: MyCustomBebas;
+	src: url("bebas_neue_regular.ttf") /* TTF file for CSS3 browsers */
+}
+
+.font_style {
+	font-family: MyCustomBebas, Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+	font-family: titleFont;
+	src: url("BebasNeue Bold.ttf")
+}
+
+@font-face {
+  font-family: 'Bebas_Book';    
+  // No need any embeded Ruby code here
+  src: url('fonts/BebasNeue_Book.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas_Bold';    
+  src: url('fonts/BebasNeue_Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+
+.title_font {
+	font-family: Bebas_Bold, Arial, Helvetica, sans-serif;
+}
+
+
+
 body { 
   background-image: url('lighter_mta.jpg'); 
   -webkit-background-size: cover;
@@ -127,6 +180,18 @@ form {
 	box-shadow: 0 0 30px 5px #999;
 }
 
+.bold_title_font {
+	font-family: 'Josefin Slab', serif; 
+	font-weight: 700;
+}
 
+.light_title_font {
+	font-family: 'Josefin Slab', serif; 
+	font-weight: 400;
+}
 
+.oswald {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
 
