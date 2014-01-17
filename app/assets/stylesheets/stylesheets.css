@@ -117,6 +117,16 @@ form {
 	margin-top: 2em;
 }
 
+.rounded_border {
+	border-radius: .5em;
+}
+
+.shadow {
+	-moz-box-shadow: 0 0 30px 5px #999;
+	-webkit-box-shadow: 0 0 30px 5px #999;
+	box-shadow: 0 0 30px 5px #999;
+}
+
 
 
 
