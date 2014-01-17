@@ -84,7 +84,7 @@ body {
   background-size: cover;
 }
 
-.brooklyn_bg_image {
+.brooklyn {
 	 background-image: url('brooklyn_background.jpg'); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -220,7 +220,7 @@ body {
 	font-weight: 400;
 }
 
-#one {
+.background_bk {
 	 background-image: url('brooklyn_background.jpg'); 
   -webkit-background-size: cover;
   -moz-background-size: cover;
