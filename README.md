@@ -1,11 +1,15 @@
-#The Visitor
+#THE VISITOR
 
-##One liners:
-##1. a website where New Yorkers can post true stories about living in new york city.
+#A website where New Yorkers can post true stories about what it's like to live in New York City.
 
 ##2. NPR's The Moth for writers
 
 ## 3. Find out what it's like to live in New York City from the people who do
+
+## Heroku Link ##
+
+#brookyn-visitor.herokuapp.com/
+
 
 This is site was thought of a few years ago when a friend and I realized that, even though everyone we knew had as least a half dozen great new york stories, there was not a website devoted to sharing those stories with the world.
 
@@ -28,10 +32,6 @@ No special gems outside of what we've been using in class. I used httparty to gr
 ## How To Use ##
 
 As a user on the site, you can read various stories that take place throughout the five boroughs in NYC. You can also submit a story, which will appear on the to of the Stories page. Along with a story, users should submit an image, which is displayed along with their story, and a zipcode where the story takes place. This zipcode updates a table that appears below each story, displaying demographics information about a the neighborhood where that story takes place.
-
-## Heroku Link ##
-
-brookyn-visitor.herokuapp.com
 
 
 ## Screen Shots ##
