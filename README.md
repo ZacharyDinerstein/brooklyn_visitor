@@ -4,7 +4,7 @@
 
 ## Heroku Link ##
 
-brookyn-visitor.herokuapp.com/
+###brookyn-visitor.herokuapp.com/
 
 
 This is site was thought of a few years ago when a friend and I realized that, even though everyone we knew had as least a half dozen great new york stories, there was not a website devoted to sharing those stories with the world.
@@ -23,7 +23,7 @@ I was able to hit most of the goals I set out design wise. I learned that CSS ta
 
 
 ## Gems ##
-No special gems outside of what we've been using in class. I used httparty to grap json info from the nyc open data api. And I used rspec for testing.
+No special gems outside of what we've been using in class. I used httparty to grab json info from the nyc open data api. And I used rspec for testing.
 
 ## How To Use ##
 
