@@ -32,10 +32,10 @@ As a user on the site, you can read various stories that take place throughout t
 
 ## Screen Shots ##
 
-![image alt][1]
+![alt tag](http://img2-2.timeinc.net/people/i/2011/news/110314/charlie-sheen-5240.jpg)
 
 
-![image alt][2]
+![image alt](http://img2-2.timeinc.net/people/i/2011/news/110314/charlie-sheen-5240.jpg)
 
 
 
