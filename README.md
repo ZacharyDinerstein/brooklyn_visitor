@@ -32,10 +32,10 @@ As a user on the site, you can read various stories that take place throughout t
 
 ## Screen Shots ##
 
-![alt tag](http://img2-2.timeinc.net/people/i/2011/news/110314/charlie-sheen-5240.jpg)
+![alt tag](http://i1317.photobucket.com/albums/t632/zackdinerstein/ScreenShot2014-04-30at14437PM_zpsa5283864.png?t=1398880339)
 
 
-![image alt](http://img2-2.timeinc.net/people/i/2011/news/110314/charlie-sheen-5240.jpg)
+![image alt](http://i1317.photobucket.com/albums/t632/zackdinerstein/THEVISITOR2_zpsf68a5970.png?t=1398880366)
 
 
 
