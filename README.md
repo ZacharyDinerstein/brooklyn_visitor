@@ -1,6 +1,6 @@
 #THE VISITOR
 
-A website where New Yorkers can post true stories about what it's like to live in New York City.
+###A website where New Yorkers can post true stories about what it's like to live in New York City.
 
 ## Heroku Link ##
 
