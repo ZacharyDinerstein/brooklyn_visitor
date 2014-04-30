@@ -2,10 +2,6 @@
 
 #A website where New Yorkers can post true stories about what it's like to live in New York City.
 
-##2. NPR's The Moth for writers
-
-## 3. Find out what it's like to live in New York City from the people who do
-
 ## Heroku Link ##
 
 #brookyn-visitor.herokuapp.com/
