@@ -1,10 +1,10 @@
 #THE VISITOR
 
-#A website where New Yorkers can post true stories about what it's like to live in New York City.
+A website where New Yorkers can post true stories about what it's like to live in New York City.
 
 ## Heroku Link ##
 
-#brookyn-visitor.herokuapp.com/
+brookyn-visitor.herokuapp.com/
 
 
 This is site was thought of a few years ago when a friend and I realized that, even though everyone we knew had as least a half dozen great new york stories, there was not a website devoted to sharing those stories with the world.
