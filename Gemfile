@@ -23,7 +23,7 @@ end
 
 gem 'jquery-rails'
 
-gem 'httparty'
+gem 'httparty', '>= 0.21.0'
 gem 'devise'
 
 
