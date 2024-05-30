@@ -28,7 +28,7 @@ gem 'devise'
 
 
 group :development do
-	gem 'capybara' 
+	gem 'capybara' , '>= 2.3.0'
 	gem 'rspec'
 	gem 'rspec-rails'
 end
